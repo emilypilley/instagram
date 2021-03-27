@@ -102,15 +102,15 @@
                                                         <constraint firstAttribute="width" secondItem="xYk-yf-iEX" secondAttribute="height" multiplier="199:209" id="Y0W-Rl-ca6"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kj-8c-xpi">
-                                                    <rect key="frame" x="28" y="434.5" width="44.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="This is an example caption!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7E-Ma-6vP">
+                                                    <rect key="frame" x="76.5" y="434.5" width="309.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="This is an example caption!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7E-Ma-6vP">
-                                                    <rect key="frame" x="80.5" y="434.5" width="305.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Emily" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kj-8c-xpi">
+                                                    <rect key="frame" x="20" y="434" width="44.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -125,7 +125,7 @@
                                                 <constraint firstItem="5kj-8c-xpi" firstAttribute="top" secondItem="xYk-yf-iEX" secondAttribute="bottom" constant="8" id="I7u-Nj-Dx4"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5kj-8c-xpi" secondAttribute="bottom" constant="8" id="L6r-Wd-dyq"/>
                                                 <constraint firstItem="xYk-yf-iEX" firstAttribute="top" secondItem="afs-8W-k1x" secondAttribute="top" constant="8" id="Qhi-b3-Tky"/>
-                                                <constraint firstItem="5kj-8c-xpi" firstAttribute="leading" secondItem="afs-8W-k1x" secondAttribute="leadingMargin" constant="8" id="oos-GT-Okk"/>
+                                                <constraint firstItem="5kj-8c-xpi" firstAttribute="leading" secondItem="afs-8W-k1x" secondAttribute="leadingMargin" constant="4" id="oos-GT-Okk"/>
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="l7E-Ma-6vP" secondAttribute="bottom" constant="8" id="rjc-OD-DKE"/>
                                                 <constraint firstItem="l7E-Ma-6vP" firstAttribute="leading" secondItem="5kj-8c-xpi" secondAttribute="trailing" constant="8" id="sMF-Aj-Sq4"/>
                                                 <constraint firstItem="l7E-Ma-6vP" firstAttribute="baseline" secondItem="5kj-8c-xpi" secondAttribute="firstBaseline" id="xtW-4n-h0b"/>
@@ -171,6 +171,28 @@
                                             <outlet property="commentLabel" destination="wDK-1M-zYj" id="wd0-37-sPq"/>
                                             <outlet property="nameLabel" destination="dGv-P9-KXV" id="7e4-gN-CZ5"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="Yqf-5y-4uJ">
+                                        <rect key="frame" x="0.0" y="580" width="414" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yqf-5y-4uJ" id="oQU-qy-xX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD2-69-Tj7">
+                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QD2-69-Tj7" firstAttribute="leading" secondItem="oQU-qy-xX3" secondAttribute="leading" constant="16" id="K1U-7S-KOo"/>
+                                                <constraint firstAttribute="trailing" secondItem="QD2-69-Tj7" secondAttribute="trailing" constant="8" id="MbY-Xx-lmD"/>
+                                                <constraint firstAttribute="bottom" secondItem="QD2-69-Tj7" secondAttribute="bottom" constant="8" id="U4q-Cg-9hd"/>
+                                                <constraint firstItem="QD2-69-Tj7" firstAttribute="top" secondItem="oQU-qy-xX3" secondAttribute="top" constant="8" id="r4q-ha-lle"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -271,6 +293,9 @@
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
