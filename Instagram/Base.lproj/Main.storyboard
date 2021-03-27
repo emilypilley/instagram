@@ -179,18 +179,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QD2-69-Tj7">
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH2-TH-lSp">
                                                     <rect key="frame" x="16" y="8" width="390" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="QD2-69-Tj7" firstAttribute="leading" secondItem="oQU-qy-xX3" secondAttribute="leading" constant="16" id="K1U-7S-KOo"/>
-                                                <constraint firstAttribute="trailing" secondItem="QD2-69-Tj7" secondAttribute="trailing" constant="8" id="MbY-Xx-lmD"/>
-                                                <constraint firstAttribute="bottom" secondItem="QD2-69-Tj7" secondAttribute="bottom" constant="8" id="U4q-Cg-9hd"/>
-                                                <constraint firstItem="QD2-69-Tj7" firstAttribute="top" secondItem="oQU-qy-xX3" secondAttribute="top" constant="8" id="r4q-ha-lle"/>
+                                                <constraint firstAttribute="trailing" secondItem="bH2-TH-lSp" secondAttribute="trailing" constant="8" id="0bH-rx-SD8"/>
+                                                <constraint firstItem="bH2-TH-lSp" firstAttribute="top" secondItem="oQU-qy-xX3" secondAttribute="top" constant="8" id="7PL-ub-wwu"/>
+                                                <constraint firstAttribute="bottom" secondItem="bH2-TH-lSp" secondAttribute="bottom" constant="8" id="He0-6x-Bkp"/>
+                                                <constraint firstItem="bH2-TH-lSp" firstAttribute="leading" secondItem="oQU-qy-xX3" secondAttribute="leading" constant="16" id="gvt-oi-Cfo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -293,9 +293,6 @@
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
