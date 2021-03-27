@@ -12,6 +12,7 @@ import AlamofireImage
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+
     
     var posts = [PFObject]()
     
@@ -60,6 +61,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.photoView.af_setImage(withURL: url)
         
         return cell
+    }
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        
+//        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let delegate = UIApplication.shared.connectedScenes
+                    .first!.delegate as! SceneDelegate
+        delegate.window?.rootViewController = loginViewController
     }
     
 
